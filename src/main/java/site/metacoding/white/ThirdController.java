@@ -26,6 +26,7 @@ public class ThirdController {
 	}
 	
 
+	//json으로 받을려면 클래스앞에 @RequestBody를 붙히면댐(gson라이브러리작동)
 	@PutMapping("/third/{id}/json")
 	public String putJsonData(@PathVariable Integer id,@RequestBody Third third) {
 		return third.toString();
